@@ -7,10 +7,13 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: c20bd25494886aa42befc0174b3648cd
+  - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: ca108f5864ad16849b0aad5d4b1096bc
   - enabled: 1
     path: Assets/Scenes/CWremastered.unity
     guid: f57e88ec1518a2a4b92fca1555b3c088

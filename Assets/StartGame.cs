@@ -11,12 +11,18 @@ public class StartGame : MonoBehaviour
 
     public void Start_Game()
     {
-        SceneManager.LoadScene("CWremastered");
+        StartCoroutine(Wait());
     }
 
     public void Hover()
     {
         source.clip = clip;
         source.PlayOneShot(source.clip);
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Loading");
     }
 }

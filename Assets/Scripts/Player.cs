@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public static bool speedy;
     public static bool passwordKnown;
     public float turnSpeed;
+    public AudioClip bgm;
+    public AudioSource source;
 
 
     void Start()
@@ -19,6 +21,9 @@ public class Player : MonoBehaviour
         speedy = false;
         speed = 5f;
         turnSpeed = 2.5f;
+        source = GetComponent<AudioSource>();
+        source.clip = bgm;
+        source.PlayOneShot(source.clip);
     }
 
     void Update()
@@ -74,11 +79,5 @@ public class Player : MonoBehaviour
 
 
     }
-
-
-    void OnCollisionEnter(Collision collision)
-    {
-    }
-
 
 }
