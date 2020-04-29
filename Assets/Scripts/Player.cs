@@ -8,9 +8,9 @@ public class Player : MonoBehaviour
 {
     //Initializations
     public float speed;
-    public static bool speedy;
-    public static bool passwordKnown;
-    public float turnSpeed;
+    public static bool speedy; //For the hidden easter egg
+    public static bool passwordKnown; //For the final barrier
+    public float turnSpeed; //rotation
     public AudioClip bgm;
     public AudioSource source;
 
@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
             }
             
         }
-        else
+        else //if easter egg isn't activated, make sure speed stays normal
         {
             if (!speedy)
             {

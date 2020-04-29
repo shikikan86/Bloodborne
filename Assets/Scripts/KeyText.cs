@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+//This script only exists because a sound can't be played if an object is destroyed (picked up by player), so it's here to make sure post-deletion commands are still executed
 public class KeyText : MonoBehaviour
 {
     public Text text;

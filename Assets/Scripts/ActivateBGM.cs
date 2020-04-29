@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ActivateBGM : MonoBehaviour
 {
+    //Changes the BGM depending on which object is collided with
+
     public AudioSource source;
     
     public AudioClip music1;
@@ -14,14 +16,12 @@ public class ActivateBGM : MonoBehaviour
     public Text text;
     public Image image;
 
-    // Start is called before the first frame update
     void Start()
     {
         text.enabled = false;
         image.enabled = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.Rotate(new Vector3(100f, 100f, 0f) * Time.deltaTime);

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class FinalBarrier : MonoBehaviour
 {
+    public AudioSource source;
+    public AudioClip clip;
     public bool activated = false;
     public Vector3 startPosition; //for the wall that is associated with the switch
     public Vector3 endPosition;
@@ -41,10 +43,13 @@ public class FinalBarrier : MonoBehaviour
     {
         if(collision.collider.name == "Player")
         {
+            //open gate if the player has the password, otherwise don't
             if (Player.passwordKnown)
             {
                 activated = true;
                 DisplayText1();
+                source.clip = clip;
+                source.PlayOneShot(source.clip);
                 StartCoroutine(ClearText());
                 Debug.Log("Password");
 

@@ -1748,6 +1748,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec59fb4b6d54c4842a306379d68a970a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 574479041}
+  clip: {fileID: 8300000, guid: a53c3827b604f5d4aa1c789cddb2c2c9, type: 3}
   activated: 0
   startPosition: {x: 0, y: 0, z: 0}
   endPosition: {x: 0, y: 0, z: 0}

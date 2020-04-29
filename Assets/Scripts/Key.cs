@@ -18,7 +18,7 @@ public class Key : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        
+        //Checks the name of the item that the script is attached to and runs according to that
         if(other.name == "Player")
         {
             source.clip = SE;
